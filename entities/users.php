@@ -21,5 +21,10 @@ class Utente {
           $this->sconto = 20; 
       };
   }
+
+  public function getDiscount() {
+    $this->setDiscount();
+    return $this->discount;
 }
+};
 ?>
