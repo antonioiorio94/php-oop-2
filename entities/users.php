@@ -11,5 +11,15 @@ class Utente {
       $this->nome = $_name;
       $this->email = $_email;
   }
+
+  protected $sconto = 0;
+  protected $registrazione = false;
+  
+  //funzione Sconto
+  protected function setDiscount() {
+      if ($this->registrazione) {
+          $this->sconto = 20; 
+      };
+  }
 }
 ?>
